@@ -71,12 +71,12 @@
 /**
  逻辑代理
  */
-@property (nullable,nonatomic,weak) id <PublicSegmentedControlDelegate> delegate;
+@property (nullable,nonatomic,weak) id <PTSegmentedControlDelegate> delegate;
 
 /**
  数据代理
  */
-@property (nullable,nonatomic,weak) id <PublicSegmentedControlDataSource> dataSource;
+@property (nullable,nonatomic,weak) id <PTSegmentedControlDataSource> dataSource;
 
 /**
  动画进度
