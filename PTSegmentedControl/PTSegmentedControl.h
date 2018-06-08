@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 @class PTSegmentedControl;
 
-@protocol PublicSegmentedControlDelegate <NSObject>
+@protocol PTSegmentedControlDelegate <NSObject>
 
 @optional
 
@@ -24,7 +24,7 @@
 
 @end
 
-@protocol PublicSegmentedControlDataSource <NSObject>
+@protocol PTSegmentedControlDataSource <NSObject>
 
 /**
  item数量
