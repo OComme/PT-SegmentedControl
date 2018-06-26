@@ -36,7 +36,7 @@
 
 - (void)reloadData
 {
-    NSAssert(self.delegate, @"PTSegmentedControl 必需设置 delegate 对象");
+//    NSAssert(self.delegate, @"PTSegmentedControl 必需设置 delegate 对象");
     NSAssert(self.dataSource, @"PTSegmentedControl 必需设置 dataSource 对象");
     
     while (self.contentView.subviews.count) {
@@ -86,7 +86,7 @@
             }
             
             if (self.view_sign == nil) {
-                return;
+                continue;
             }
             [self.contentView addSubview:self.view_sign];
             [self.view_sign mas_makeConstraints:^(MASConstraintMaker *make) {
