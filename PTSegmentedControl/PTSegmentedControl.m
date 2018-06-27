@@ -159,6 +159,13 @@
     }];
 }
 
+#pragma mark-set
+- (void)setDataSource:(id<PTSegmentedControlDataSource>)dataSource
+{
+    _dataSource = dataSource;
+    [self reloadData];
+}
+
 #pragma mark-lazyload
 - (NSMutableArray *)feedEntity_items
 {
