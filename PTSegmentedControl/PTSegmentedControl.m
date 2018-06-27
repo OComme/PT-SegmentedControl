@@ -104,9 +104,10 @@
 {
     if ([self.delegate respondsToSelector:@selector(segmentedControl:didSelectItem:)]) {
         [self.delegate segmentedControl:self didSelectItem:(sender.tag - 1)];
+        return;
     }
     
-    [self event_selectItem:sender];
+    self.animationFloat = sender.tag - 1;
 }
 
 - (void)setAnimationFloat:(CGFloat)animationFloat
