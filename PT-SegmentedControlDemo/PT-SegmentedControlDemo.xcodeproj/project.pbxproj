@@ -13,7 +13,7 @@
 		01297D3F20CA268400EB750A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01297D3E20CA268400EB750A /* Assets.xcassets */; };
 		01297D4220CA268400EB750A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01297D4020CA268400EB750A /* LaunchScreen.storyboard */; };
 		01297D4520CA268400EB750A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01297D4420CA268400EB750A /* main.m */; };
-		01297D4E20CA29D300EB750A /* PTSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 01297D4D20CA29D300EB750A /* PTSegmentedControl.m */; };
+		0430AC8420F9D58D006FBDD1 /* PTSegmentViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0430AC8320F9D58D006FBDD1 /* PTSegmentViewModel.m */; };
 		155D717207158FD70DBC54CA /* libPods-PT-SegmentedControlDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87832F1E89283670998FFBB1 /* libPods-PT-SegmentedControlDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -28,8 +28,8 @@
 		01297D4120CA268400EB750A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01297D4320CA268400EB750A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01297D4420CA268400EB750A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		01297D4C20CA29D300EB750A /* PTSegmentedControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTSegmentedControl.h; sourceTree = "<group>"; };
-		01297D4D20CA29D300EB750A /* PTSegmentedControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTSegmentedControl.m; sourceTree = "<group>"; };
+		0430AC8220F9D58D006FBDD1 /* PTSegmentViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTSegmentViewModel.h; sourceTree = "<group>"; };
+		0430AC8320F9D58D006FBDD1 /* PTSegmentViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTSegmentViewModel.m; sourceTree = "<group>"; };
 		761330A14CC911F729CD46EA /* Pods-PT-SegmentedControlDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PT-SegmentedControlDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PT-SegmentedControlDemo/Pods-PT-SegmentedControlDemo.release.xcconfig"; sourceTree = "<group>"; };
 		87832F1E89283670998FFBB1 /* libPods-PT-SegmentedControlDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PT-SegmentedControlDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2E3ED88652488F63919612C /* Pods-PT-SegmentedControlDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PT-SegmentedControlDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PT-SegmentedControlDemo/Pods-PT-SegmentedControlDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 		01297D3420CA267F00EB750A /* PT-SegmentedControlDemo */ = {
 			isa = PBXGroup;
 			children = (
-				01297D4B20CA29B200EB750A /* PTSegmentedControl */,
+				0430AC7E20F9D560006FBDD1 /* VM */,
 				01297D3520CA267F00EB750A /* AppDelegate.h */,
 				01297D3620CA267F00EB750A /* AppDelegate.m */,
 				01297D3820CA267F00EB750A /* ViewController.h */,
@@ -82,14 +82,13 @@
 			path = "PT-SegmentedControlDemo";
 			sourceTree = "<group>";
 		};
-		01297D4B20CA29B200EB750A /* PTSegmentedControl */ = {
+		0430AC7E20F9D560006FBDD1 /* VM */ = {
 			isa = PBXGroup;
 			children = (
-				01297D4C20CA29D300EB750A /* PTSegmentedControl.h */,
-				01297D4D20CA29D300EB750A /* PTSegmentedControl.m */,
+				0430AC8220F9D58D006FBDD1 /* PTSegmentViewModel.h */,
+				0430AC8320F9D58D006FBDD1 /* PTSegmentViewModel.m */,
 			);
-			name = PTSegmentedControl;
-			path = ../../PTSegmentedControl;
+			path = VM;
 			sourceTree = "<group>";
 		};
 		A8D3EFCDED684229EA3C2FB4 /* Frameworks */ = {
@@ -233,10 +232,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01297D4E20CA29D300EB750A /* PTSegmentedControl.m in Sources */,
 				01297D3A20CA267F00EB750A /* ViewController.m in Sources */,
 				01297D4520CA268400EB750A /* main.m in Sources */,
 				01297D3720CA267F00EB750A /* AppDelegate.m in Sources */,
+				0430AC8420F9D58D006FBDD1 /* PTSegmentViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

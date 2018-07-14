@@ -2,6 +2,8 @@
 
 ` PTSegmentedControl` 是遵循面向协议的思想来封装的分栏控制器。
 
+![](Asset/sample.gif)
+
 具体使用方式类似 `UITableView` 和 `UICollectionView`,通过 `delegate` 和 `dataSource` 来定制 `View`
 
 `delegate`主要实现相应的点击方法
@@ -74,3 +76,5 @@
 `pod 'PTSegmentedControl', :git=> 'https://github.com/OComme/PT-SegmentedControl'`
 
 将这个工具导入你的项目
+
+
