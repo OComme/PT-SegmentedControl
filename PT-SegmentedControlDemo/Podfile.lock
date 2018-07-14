@@ -1,16 +1,25 @@
 PODS:
   - Masonry (1.1.0)
+  - PTSegmentedControl (0.0.1):
+    - Masonry
 
 DEPENDENCIES:
   - Masonry
+  - PTSegmentedControl (from `../`)
 
-SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
-    - Masonry
+EXTERNAL SOURCES:
+  PTSegmentedControl:
+    :git: ../
+
+CHECKOUT OPTIONS:
+  PTSegmentedControl:
+    :commit: 41189df25cc937276b5099c9cd64dad75c6cb4d6
+    :git: ../
 
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  PTSegmentedControl: f6c0d4f6cb78f74035aa79b865162302a5e59b30
 
-PODFILE CHECKSUM: e84e8796bc260b1494cf01382dcfea630bb36500
+PODFILE CHECKSUM: 427ac70a889e533c6ae517a0e49db3701c4205e1
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.4.0
