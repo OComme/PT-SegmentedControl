@@ -164,6 +164,9 @@
 - (void)setDataSource:(id<PTSegmentedControlDataSource>)dataSource
 {
     _dataSource = dataSource;
+    if (dataSource == nil) {
+        return;
+    }
     [self reloadData];
 }
 
