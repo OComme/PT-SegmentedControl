@@ -112,6 +112,7 @@
 
 - (void)setAnimationFloat:(CGFloat)animationFloat
 {
+    _animationFloat = animationFloat;
     NSUInteger maxNumber = [self.dataSource numberOfSectionsInSegmentedControl:self];
     if (maxNumber < 2) {
         return;
