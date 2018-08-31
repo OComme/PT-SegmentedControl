@@ -155,6 +155,7 @@
 - (void)add_contentView
 {
     _contentView = [UIScrollView new];
+    _contentView.showsHorizontalScrollIndicator = NO;
     [self addSubview:_contentView];
     [_contentView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(UIEdgeInsetsZero);
