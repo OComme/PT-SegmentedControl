@@ -125,8 +125,18 @@
     if (self.view_sign == nil) {
         return;
     }
-    CGFloat itemSpace = fabs([self.contentView viewWithTag:2].center.x - [self.contentView viewWithTag:1].center.x);
-    CGFloat offsetX = animationFloat * itemSpace;
+    CGFloat itemSpace;
+    if (index <= 1) {
+        itemSpace = [self.contentView viewWithTag:1].bounds.size.width;
+    }else if (index >= maxNumber) {
+        itemSpace = [self.contentView viewWithTag:maxNumber].bounds.size.width;
+    }else if (animationFloat - index > 0){
+        itemSpace = fabs([self.contentView viewWithTag:index + 1].center.x - [self.contentView viewWithTag:index].center.x);
+    }else if (animationFloat - index < 0){
+        itemSpace = fabs([self.contentView viewWithTag:index].center.x - [self.contentView viewWithTag:index - 1].center.x);
+    }
+    CGFloat offsetX = itemSpace * (animationFloat - ceil(animationFloat - 0.5));
+    offsetX += [self.contentView viewWithTag:index].center.x - [self.contentView viewWithTag:1].center.x;
     
     CGFloat changeOffset = fabs((animationFloat * 100 - self.view_sign.transform.tx*100));
     if (changeOffset  >= 100) {
